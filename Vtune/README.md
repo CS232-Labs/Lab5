@@ -8,6 +8,7 @@
 
 #### Intro
 - You are givent the c code for a [password cracking](link_to_code) application which you are required to optimize.
+- **The encryption/checksum algorithms are awkward,insecure and is not an example of a practical application. This is done intentionally to allow significant scope for optimization**
 
 #### Compilation
 A [Makefile](link_to_makefile) is provided in the same folder with the required optimization flags you will be evaluated on. The following command can be used to compile the application generating the binary cracker.o
