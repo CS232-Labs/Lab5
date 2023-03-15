@@ -55,6 +55,7 @@ You are expected to use the vtune tool to detect hotspots and remove them preser
 - Do not create any new global data structures.
 - Do not modify any line of code following the marker `// DO NOT MODIFY ANY CODE BELOW`
 - Note that any optimizations not following the flowchart will be directly awarded 0.
+- If you are unsure regarding whether an optimization violates the constraints/flowchart/intent then ask the TAs preferably during the lab hours. 
 
 #### Flowchart
 ![](lab5_vtune.svg?raw=true)
