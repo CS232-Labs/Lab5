@@ -49,9 +49,6 @@ You are expected to use the vtune tool to detect hotspots and remove them preser
 - Submit a screenshot of the final output obtained along with the series of optimizations performed and the intuition/reason behind them in the report. You will have to defend every optimization performed.
 - Pro Tip: Always try to optimize the common case and the largest hotspot first.
 
-#### Submission Format
-- 
-
 #### Bonus
 Improving the password cracker by performing threading without changing the order of passwords being tested would be awarded a bonus score.
 
