@@ -11,18 +11,37 @@
 ### Part2
 
 #### Intro
-- You are to optimise the provided [password cracking c code](link_to_code) which doesn't take any command line arguments. 
-- You are also provided with a [Makefile](link_to_makefile), run the command below 
-to generate the executable on which you'll perform analysis using Vtune. Note that you must not modify the Makefile.
+- You are givent the c code for a [password cracking](link_to_code) application which you are required to optimize.
+#### Compilation
+A [Makefile](link_to_makefile) is provided in the same folder with the required optimization flags you will be evaluated on. The following command can be used to compile the application generating the binary cracker.o
 ```
 make
 ``` 
-- You're allowed to change value of the macro **ITER** in the c code (see the codeblock below) as you deem necessary for your analysis, when evaluating we will ensure a uniform value.
+- The number of passwords that are tested can be configured via the compile time parameter ITER. This is provided in the code in the following manner:
 ```
 #define ITER 10000
 ```
-- Output format
-- What is supposed to increase?
+#### Running Instructions
+No other parameters or arguments are required to run the password cracker. The command used to execute it is as follows:
+```
+./cracker.o
+```
+#### Output Format
+```
+= = = VTune profiling demo = = =
+=================================
+memory malloc		+OK
+initializing from		built-in data
+memory malloc		+OK
+max iter		100000
+===
+try search... wait!
+Password per sec:       250 
+```
+The beginning section of the output can be used to verify if the initialization process completes successfully along with the value of the parameter ITER. The application in addition prints the number of passwords cracker per second. Note that this value is empirical and is affected by system noise, value of ITER and the resolution of the clock in use.
+#### Objective
+You are expected to use the vtune tool to detect hotspots and remove them preserving the algorithm used. The number of passwords cracked per second will be used to determine the grade.
+
 - Idea to reduce analysis jitter (for analysing your result when running on your terminal)
 
 #### Flowchart
