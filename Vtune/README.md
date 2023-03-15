@@ -2,10 +2,6 @@
 
 ## Problem Statement
 
-### Note (Constraints)
-- Perform non-algorithmic optimisations i.e The provided flowchart must be followed
-- Don't change code in areas marked appropriately by comments
-
 ### Part1
 
 ### Part2
@@ -41,20 +37,24 @@ Password per sec:       250
 The beginning section of the output can be used to verify if the initialization process completes successfully along with the value of the parameter ITER. The application in addition prints the number of passwords cracker per second. Note that this value is empirical and is affected by system noise, value of ITER and the resolution of the clock in use.
 #### Objective
 You are expected to use the vtune tool to detect hotspots and remove them preserving the algorithm used. The number of passwords cracked per second will be used to determine the grade.
-
-- Idea to reduce analysis jitter (for analysing your result when running on your terminal)
+#### Constraints
+- You are not allowed to use the c library functions strlen and memcmp are needed to implement a custom optimized version of the same.
+- Do not modify the decryption scheme as well as the representation used to hold the required keys and password. In addition you are not expected to modify the order in which passwords or generated as well as the keys held. i.e, the value of any global data structure must be preserved at the end of execution.
+- Do not modify any line of code following the marker `// DO NOT MODIFY ANY CODE BELOW`
+- Note that any optimizations not following the flowchart will be directly awarded 0.
 
 #### Flowchart
 
 #### Report
+- Submit a screenshot of the final output obtained along with the series of optimizations performed and the intuition/reason behind them in the report. You will have to defend every optimization performed.
+- Pro Tip: Always try to optimize the common case and the largest hotspot first.
 
 #### Submission Format
-
-#### Grading Scheme
+- 
 
 #### Bonus
-Can add threading to improve performance
+Improving the password cracker by performing threading without changing the order of passwords being tested would be awarded a bonus score.
 
 ## Resources
 - [Installation and basic usage of Intel Vtune](https://github.com/CS232-Labs/Lab-5---Resources/tree/main/intel-vtune)
-- Point to resources on some optimisations
+- [Stable benchmarking of binaries in modern machines](https://easyperf.net/blog/2019/08/02/Perf-measurement-environment-on-Linux)
