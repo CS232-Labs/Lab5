@@ -4,6 +4,12 @@
 
 ### Part1
 
+- Run the performance snapshot analysis over the sample matrix multiplication code provided. And report the IPC, bad speculation, logical core utilization.
+- Now, run hotspot detection on the same code and report top hotspot function along with percentage of CPU time.
+- Follow up, with the memory access analysis and report percentage of L2-bound, L3-bound and LLC-bound memory accesses.
+- Next, run the microarchitecture exploration tool and report the number of instructions retired, L1 TLB miss rate, average CPU frequency, effective logical core utilization and explain the difference with the logical core utilization found in performance snapshot analysis.
+- For each of these parts, you need to show screenshots to validate your numbers and briefly explain what these metrics are and what information do you gain from them. 
+
 ### Part2
 
 #### Intro
@@ -75,9 +81,10 @@ Decrypt:
 ```
 
 #### Report
-- Submit a screenshot of the final output obtained along with the series of optimizations performed and the intuition/reason behind them in the report. You will have to defend every optimization performed.
-- Add a screenshot showing the effect of each optimization performed and the resultant performance improvement over baseline in the report as well. Ex. [slide 9](https://www.cse.iitb.ac.in/~biswa/courses/CS305/lectures/L34.pdf)
-- Pro Tip: Always try to optimize the common case and the largest hotspot first.
+- Show a screenshot of the final output obtained along with a presentation of the series of optimizations performed and the intuition/reason behind them in the video. You will have to defend every optimization performed.
+- Show a screenshot showing the effect of each optimization performed and the resultant performance improvement over baseline in the report as well. Ex. [slide 9](https://www.cse.iitb.ac.in/~biswa/courses/CS305/lectures/L34.pdf)
+- **Pro Tip**: Always try to optimize the common case and the largest hotspot first.
+- **Pro Tip**: We can not time a single instruction in a pipelined processor, so whenever a hotspot occurs search it's vicinity as well.
 
 ## Resources
 - [Installation and basic usage of Intel Vtune](https://github.com/CS232-Labs/Lab-5---Resources/tree/main/intel-vtune)
