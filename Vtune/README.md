@@ -1,6 +1,8 @@
 # Intel Vtune Assignment
 
 ## Problem Statement
+
+### Note (Constraints)
 - Perform non-algorithmic optimisations i.e The provided flowchart must be followed
 - Don't change code in areas marked appropriately by comments
 
@@ -23,12 +25,17 @@ make
 - What is supposed to increase?
 - Idea to reduce analysis jitter (for analysing your result when running on your terminal)
 
+#### Flowchart
+
 #### Report
 
 #### Submission Format
+
+#### Grading Scheme
 
 #### Bonus
 Can add threading to improve performance
 
 ## Resources
-->Point to resources on some optimisations
+- [Installation and basic usage of Intel Vtune](https://github.com/CS232-Labs/Lab-5---Resources/tree/main/intel-vtune)
+- Point to resources on some optimisations
