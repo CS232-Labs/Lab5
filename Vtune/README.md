@@ -76,6 +76,7 @@ Decrypt:
 
 #### Report
 - Submit a screenshot of the final output obtained along with the series of optimizations performed and the intuition/reason behind them in the report. You will have to defend every optimization performed.
+- Add a screenshot showing the effect of each optimization performed and the resultant performance improvement over baseline in the report as well. Ex. [slide 9](https://www.cse.iitb.ac.in/~biswa/courses/CS305/lectures/L34.pdf)
 - Pro Tip: Always try to optimize the common case and the largest hotspot first.
 
 ## Resources
