@@ -51,7 +51,8 @@ You are expected to use the vtune tool to detect hotspots and remove them preser
 
 #### Constraints
 - You are not allowed to use the c library functions strlen and memcmp are needed to implement a custom optimized version of the same. In addition assume that the lengths of ciphertext and plaintext are also unknown and need to be computed during runtime.
-- Do not modify the decryption scheme as well as the representation used to hold the required keys and password. In addition you are not expected to modify the order in which passwords or generated as well as the keys held. i.e, the value of any global data structure must be preserved at the end of execution.
+- Do not modify the decryption scheme as well as the representation used to hold the required keys and password. In addition you are not expected to modify the order in which passwords are generated as well as the way the keys are held. i.e, the value of any global data structure must be preserved at the end of execution.
+- Do not create any new global data structures.
 - Do not modify any line of code following the marker `// DO NOT MODIFY ANY CODE BELOW`
 - Note that any optimizations not following the flowchart will be directly awarded 0.
 
