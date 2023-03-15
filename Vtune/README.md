@@ -9,11 +9,19 @@
 ### Part2
 
 #### Intro
-You have to optimise the provided [password cracking c code](link_to_code). You are provided with a [Makefile](link_to_makefile) which you're to use(`make run`) to generate the executable on which you'll perform your analysis using Vtune. Note that you must not modify the Makefile.
-Can change the number of iterations
-Output format
-What is supposed to increase?
-Idea to reduce analysis jitter (for analysing your result when running on your terminal)
+- You are to optimise the provided [password cracking c code](link_to_code) which doesn't take any command line arguments. 
+- You are also provided with a [Makefile](link_to_makefile), run the command below 
+to generate the executable on which you'll perform analysis using Vtune. Note that you must not modify the Makefile.
+```
+make
+``` 
+- You're allowed to change value of the macro **ITER** in the c code (see the codeblock below) as you deem necessary for your analysis, when evaluating we will ensure a uniform value.
+```
+#define ITER 10000
+```
+- Output format
+- What is supposed to increase?
+- Idea to reduce analysis jitter (for analysing your result when running on your terminal)
 
 #### Report
 
