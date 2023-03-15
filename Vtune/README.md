@@ -6,8 +6,8 @@
 
 - Run the performance snapshot analysis over the sample matrix multiplication code provided. And report the IPC, bad speculation, logical core utilization.
 - Now, run hotspot detection on the same code and report top hotspot function along with percentage of CPU time.
-- Follow up, with the memory access analysis and report percentage of L2-bound, L3-bound and LLC-bound memory accesses.
-- Next, run the microarchitecture exploration tool and report the number of instructions retired, L1 TLB miss rate, average CPU frequency, effective logical core utilization and explain the difference with the logical core utilization found in performance snapshot analysis.
+- Follow up, with the memory access analysis and report percentage of L2-bound, L3-bound and LLC-bound memory accesses. Here L2-bound memory accesses refer to accesses that where they where stalled on L2 i.e, a L1 miss happened but the data was present in L2.
+- Next, run the microarchitecture exploration tool and report the number of instructions retired, average CPU frequency, effective logical core utilization and explain the difference with the logical core utilization found in performance snapshot analysis.
 - For each of these parts, you need to show screenshots to validate your numbers and briefly explain what these metrics are and what information do you gain from them. 
 
 ### Part2
