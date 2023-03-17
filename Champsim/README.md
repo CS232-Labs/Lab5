@@ -1,6 +1,6 @@
 # Champsim Assignment (This is INCOMPLETE!!!)
 
-##Note
+## Note
 * Please note that there is no report this time. All the explanations and reasonings should be presented in a video. You are free to use slides to put information and present it in the video.
 * Make sure that every team member is present in the video.
 
