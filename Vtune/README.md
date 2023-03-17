@@ -6,8 +6,8 @@
 
 - Run the performance snapshot analysis over the sample matrix multiplication code provided. And report the IPC, bad speculation, logical core utilization.
 - Now, run hotspot detection on the same code and report top hotspot function along with percentage of CPU time.
-- Follow up, with the memory access analysis and report percentage of L2-bound, L3-bound and LLC-bound memory accesses.
-- Next, run the microarchitecture exploration tool and report the number of instructions retired, L1 TLB miss rate, average CPU frequency, effective logical core utilization and explain the difference with the logical core utilization found in performance snapshot analysis.
+- Follow up, with the memory access analysis and report percentage of L2-bound, L3-bound and LLC-bound memory accesses. Here L2-bound memory accesses refer to accesses that where they where stalled on L2 i.e, a L1 miss happened but the data was present in L2.
+- Next, run the microarchitecture exploration tool and report the number of instructions retired, average CPU frequency, effective logical core utilization and explain the difference with the logical core utilization found in performance snapshot analysis.
 - For each of these parts, you need to show screenshots to validate your numbers and briefly explain what these metrics are and what information do you gain from them. 
 
 ### Part2
@@ -50,7 +50,7 @@ The beginning section of the output can be used to verify if the initialization 
 You are expected to use the vtune tool to detect hotspots and remove them preserving the algorithm used. The number of passwords cracked per second will be used to determine the grade.
 
 #### Constraints
-- You are not allowed to use the c library functions strlen and memcmp are needed to implement a custom optimized version of the same. In addition assume that the lengths of ciphertext and plaintext are also unknown and need to be computed during runtime.
+- You are not allowed to use the c library functions strlen and memcmp and are needed to implement a custom optimized version of the same in the provided my_strlen and my_memcmp functions provided. In addition assume that the lengths of ciphertext and plaintext are also unknown and need to be computed during runtime.
 - Do not modify the decryption scheme as well as the representation used to hold the required keys and password. In addition you are not expected to modify the order in which passwords are generated as well as the way the keys are held. i.e, the value of any global data structure must be preserved at the end of execution.
 - Do not create any new global data structures.
 - Do not modify any line of code following the marker `// DO NOT MODIFY ANY CODE BELOW`

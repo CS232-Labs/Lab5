@@ -78,7 +78,7 @@ char* DeCrypt(char *ciphertext, char *pswd)
             
             if(prf_int == 15)
             {
-                prf_int = 14;
+                prf_int = 31;
             }
             
             int sub_result = sub_func(prf_int & mask) ^ pswd[p];
