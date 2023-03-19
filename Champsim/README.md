@@ -25,7 +25,7 @@ We will be comparing the performances(`IPC`) of these replacement policies for t
 Plot the IPC values for different ways mentioned above in a single plot (use a multi-bar chart). Present your reasoning on observations in a video. Which replacement policy works the best? Which works the worst? Give appropriate reasons in your video.
 
 ## Part III - Best-Offset hardware prefetching (50 points)
-We will be implementing the following paper: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7446087
+We will be implementing the following paper: https://hal.inria.fr/hal-01165600/document 
 
 * Read the above paper and implement best-offset prefetching. 
 * Take the above paper as a baseline and feel free to improve on the paper with your own ideas. Make sure you clearly describe your ideas in the video. 
