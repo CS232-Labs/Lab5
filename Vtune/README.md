@@ -50,7 +50,8 @@ The beginning section of the output can be used to verify if the initialization 
 You are expected to use the vtune tool to detect hotspots and remove them preserving the algorithm used. The number of passwords cracked per second will be used to determine the grade.
 
 #### Constraints
-- You are not allowed to use the c library functions strlen and memcmp and are needed to implement a custom optimized version of the same in the provided my_strlen and my_memcmp functions provided. In addition assume that the lengths of ciphertext and plaintext are also unknown and need to be computed during runtime.
+- In this code there are two custom functions my_strlen and my_memcmp implemented, you are required to use these functions wherever required inplace of strlen and memcmp. You are free to optimize them but must not use any C library functions to do so.
+- In addition despite the lengths of ciphertext and plaintext being known at compile time, your code is to work without any such assumptions and must calculate their lengths at runtime.
 - Do not modify the decryption scheme as well as the representation used to hold the required keys and password. In addition you are not expected to modify the order in which passwords are generated as well as the way the keys are held. i.e, the value of any global data structure must be preserved at the end of execution.
 - Do not create any new global data structures.
 - Do not modify any line of code following the marker `// DO NOT MODIFY ANY CODE BELOW`
