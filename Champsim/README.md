@@ -20,7 +20,7 @@ Answer all of the below questions in a video.
 - Random: Here we choose a random block to evict in case the cache becomes full.
 
 ### Performance Analysis:
-We will be comparing the performances(`IPC`, `LLC miss rate`) of these replacement policies for the `Last-level cache` for the following configurations for the provided traces(will be provided soon), by changing the number of ways in a set among `1, 4, 16, 32`
+We will be comparing the performances(`IPC`, `LLC miss rate`) of these replacement policies for the `Last-level cache` for the following configurations for the provided traces(find them [here](https://drive.google.com/drive/folders/1mxqC5G1D8DshsTo0xGW4Txi1A4v0PcK5)), by changing the number of ways in a set among `1, 4, 16, 32`
 
 Plot the `IPC` and `LLC miss rate` values for different ways mentioned above in a two plots (use a multi-bar chart). Present your reasoning on observations in a video. Which replacement policy works the best? Which works the worst? Give appropriate reasons in your video.
 
