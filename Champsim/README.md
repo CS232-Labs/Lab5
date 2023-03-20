@@ -20,9 +20,9 @@ Answer all of the below questions in a video.
 - Random: Here we choose a random block to evict in case the cache becomes full.
 
 ### Performance Analysis:
-We will be comparing the performances(`IPC`) of these replacement policies for the `Last-level cache` for the following configurations for the provided traces(inside `Champsim/traces`), by changing the number of ways in a set among `1, 4, 16, 32`
+We will be comparing the performances(`IPC`, `LLC miss rate`) of these replacement policies for the `Last-level cache` for the following configurations for the provided traces(inside `Champsim/traces`), by changing the number of ways in a set among `1, 4, 16, 32`
 
-Plot the IPC values for different ways mentioned above in a single plot (use a multi-bar chart). Present your reasoning on observations in a video. Which replacement policy works the best? Which works the worst? Give appropriate reasons in your video.
+Plot the `IPC` and `LLC miss rate` values for different ways mentioned above in a two plots (use a multi-bar chart). Present your reasoning on observations in a video. Which replacement policy works the best? Which works the worst? Give appropriate reasons in your video.
 
 ## Part III - Best-Offset hardware prefetching (50 points)
 We will be implementing the following paper: https://hal.inria.fr/hal-01165600/document 
@@ -33,19 +33,3 @@ We will be implementing the following paper: https://hal.inria.fr/hal-01165600/d
 
 ## Submission Format
 * Submit the compressed champsim folder(the given source + all the changes you make) as `champsim.tar.gz`
-  
-<!-- ```
-{roll_number}_cs232_lab3
-├── Champsim
-│   ├── io.asm
-│   ├── Makefile
-│   ├── matrix-multiplcation-testbench.asm
-│   ├── matrix-multiplication-ijk.asm
-│   ├── matrix-multiplication-ikj.asm
-│   ├── matrix-multiplication-jik.asm
-│   ├── matrix-multiplication-jki.asm
-│   ├── matrix-multiplication-kij.asm
-│   ├── matrix-multiplication-kji.asm
-│   ├── memory-test.asm
-├── {roll_number}-report.pdf
-``` -->

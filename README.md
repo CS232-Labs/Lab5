@@ -9,6 +9,7 @@
 ├── Vtune
 │   ├── cracker.c
 ├── {roll_number1}_{roll_number2}_{roll_number3}-report.mkv
+├── ChampSim (Champsim source code + the changes you've made)
 ```
 - You need to submit a video report named {roll_number1}\_{roll_number2}\_{roll_number3}-report.mkv containing the details required by the questions. **Note** : Everybody needs to be present(__your face must be visible__) in the video and explain atleast one section. In addition at the end of the video, clarify on the contribution of each team member towards the lab.
 - Submit a compressed file {{roll_number1}\_{roll_number2}\_{roll_number3}\_cs232\_lab5.tar.gz
