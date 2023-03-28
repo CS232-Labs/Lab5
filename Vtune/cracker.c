@@ -32,7 +32,7 @@ int my_strlen(char *str)
 {
     char *start = str;
     while(*(str++) != '\0');
-    return str-start;
+    return str-start-1;
 }
 
 // Decrypting ciphertext using the found password
@@ -62,8 +62,8 @@ char* DeCrypt(char *ciphertext, char *pswd)
         }
     }
 
-    char* buff = (char*)malloc(my_strlen(ciphertext));
-    memcpy(buff, ciphertext, my_strlen(ciphertext));
+    char* buff = (char*)malloc(my_strlen(ciphertext)+1);
+    memcpy(buff, ciphertext, my_strlen(ciphertext)+1);
 
     int px = 0, py = 0;
 
@@ -113,7 +113,7 @@ int CheckCRC(char *plaintext, int validCRC)
         return x;
     }
 
-    if ((CalculateCRC(plaintext) == validCRC) && (my_memcmp(plaintext, correct_plaintext, my_strlen(plaintext))))
+    if ((CalculateCRC(plaintext) == validCRC) && (!my_memcmp(plaintext, correct_plaintext, my_strlen(plaintext))))
         return 1;
     return 0;
 }
